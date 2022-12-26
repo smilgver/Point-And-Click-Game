@@ -1517,37 +1517,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ac53cd1022e860f4d962b0040842c3d0, type: 3}
---- !u!1 &346308359
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 346308360}
-  m_Layer: 0
-  m_Name: Events
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &346308360
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 346308359}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -61, y: 1, z: -78.75}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 7
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &350122448 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1166777883376364070, guid: c4655b937d2bf23438bf4eb24ab72f70, type: 3}
@@ -1667,19 +1636,23 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3100948306714011265, guid: 358635f5e3494f748af6bd02dfc77853, type: 3}
       propertyPath: dialogue.name
-      value: 
+      value: Shop Workers
       objectReference: {fileID: 0}
     - target: {fileID: 3100948306714011265, guid: 358635f5e3494f748af6bd02dfc77853, type: 3}
       propertyPath: dialogue.sentences.Array.size
-      value: 0
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 3100948306714011265, guid: 358635f5e3494f748af6bd02dfc77853, type: 3}
       propertyPath: dialogue.sentences.Array.data[0]
-      value: Aw man... I wish I could go to the purple neighborhood.
+      value: Leave us alone, we're on break...
       objectReference: {fileID: 0}
     - target: {fileID: 3100948306714011265, guid: 358635f5e3494f748af6bd02dfc77853, type: 3}
       propertyPath: dialogue.sentences.Array.data[1]
-      value: I will only let you in if you're purple.
+      value: ...
+      objectReference: {fileID: 0}
+    - target: {fileID: 3100948306714011265, guid: 358635f5e3494f748af6bd02dfc77853, type: 3}
+      propertyPath: dialogue.sentences.Array.data[2]
+      value: I wanna quit this job.
       objectReference: {fileID: 0}
     - target: {fileID: 6799141493579684121, guid: 358635f5e3494f748af6bd02dfc77853, type: 3}
       propertyPath: m_Name
@@ -1760,19 +1733,43 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3100948306714011265, guid: 358635f5e3494f748af6bd02dfc77853, type: 3}
       propertyPath: dialogue.name
-      value: 
+      value: Lonely Blue
       objectReference: {fileID: 0}
     - target: {fileID: 3100948306714011265, guid: 358635f5e3494f748af6bd02dfc77853, type: 3}
       propertyPath: dialogue.sentences.Array.size
-      value: 0
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 3100948306714011265, guid: 358635f5e3494f748af6bd02dfc77853, type: 3}
       propertyPath: dialogue.sentences.Array.data[0]
-      value: Aw man... I wish I could go to the purple neighborhood.
+      value: I'm sad... because I'm lonely...
       objectReference: {fileID: 0}
     - target: {fileID: 3100948306714011265, guid: 358635f5e3494f748af6bd02dfc77853, type: 3}
       propertyPath: dialogue.sentences.Array.data[1]
-      value: I will only let you in if you're purple.
+      value: Oh? You're interested in my suffering?
+      objectReference: {fileID: 0}
+    - target: {fileID: 3100948306714011265, guid: 358635f5e3494f748af6bd02dfc77853, type: 3}
+      propertyPath: dialogue.sentences.Array.data[2]
+      value: Well... my friend move far away and I miss her...
+      objectReference: {fileID: 0}
+    - target: {fileID: 3100948306714011265, guid: 358635f5e3494f748af6bd02dfc77853, type: 3}
+      propertyPath: dialogue.sentences.Array.data[3]
+      value: Will you sit with me for a while?
+      objectReference: {fileID: 0}
+    - target: {fileID: 3100948306714011265, guid: 358635f5e3494f748af6bd02dfc77853, type: 3}
+      propertyPath: dialogue.sentences.Array.data[4]
+      value: ...
+      objectReference: {fileID: 0}
+    - target: {fileID: 3100948306714011265, guid: 358635f5e3494f748af6bd02dfc77853, type: 3}
+      propertyPath: dialogue.sentences.Array.data[5]
+      value: ..........
+      objectReference: {fileID: 0}
+    - target: {fileID: 3100948306714011265, guid: 358635f5e3494f748af6bd02dfc77853, type: 3}
+      propertyPath: dialogue.sentences.Array.data[6]
+      value: ....................
+      objectReference: {fileID: 0}
+    - target: {fileID: 3100948306714011265, guid: 358635f5e3494f748af6bd02dfc77853, type: 3}
+      propertyPath: dialogue.sentences.Array.data[7]
+      value: Thanks... I feel a little better now.
       objectReference: {fileID: 0}
     - target: {fileID: 6799141493579684121, guid: 358635f5e3494f748af6bd02dfc77853, type: 3}
       propertyPath: m_Name
@@ -1973,19 +1970,23 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3100948306714011265, guid: 358635f5e3494f748af6bd02dfc77853, type: 3}
       propertyPath: dialogue.name
-      value: 
+      value: Player
       objectReference: {fileID: 0}
     - target: {fileID: 3100948306714011265, guid: 358635f5e3494f748af6bd02dfc77853, type: 3}
       propertyPath: dialogue.sentences.Array.size
-      value: 0
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 3100948306714011265, guid: 358635f5e3494f748af6bd02dfc77853, type: 3}
       propertyPath: dialogue.sentences.Array.data[0]
-      value: Aw man... I wish I could go to the purple neighborhood.
+      value: Woah is that 4$ on the floor?
       objectReference: {fileID: 0}
     - target: {fileID: 3100948306714011265, guid: 358635f5e3494f748af6bd02dfc77853, type: 3}
       propertyPath: dialogue.sentences.Array.data[1]
-      value: I will only let you in if you're purple.
+      value: Did those kids leave it here?
+      objectReference: {fileID: 0}
+    - target: {fileID: 3100948306714011265, guid: 358635f5e3494f748af6bd02dfc77853, type: 3}
+      propertyPath: dialogue.sentences.Array.data[2]
+      value: Well finders keepers :)
       objectReference: {fileID: 0}
     - target: {fileID: 6799141493579684121, guid: 358635f5e3494f748af6bd02dfc77853, type: 3}
       propertyPath: m_Name
@@ -2028,7 +2029,7 @@ Transform:
   m_Children:
   - {fileID: 1527745261}
   m_Father: {fileID: 0}
-  m_RootOrder: 9
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &430561238
 PrefabInstance:
@@ -2781,19 +2782,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3100948306714011265, guid: 358635f5e3494f748af6bd02dfc77853, type: 3}
       propertyPath: dialogue.name
-      value: 
+      value: Player
       objectReference: {fileID: 0}
     - target: {fileID: 3100948306714011265, guid: 358635f5e3494f748af6bd02dfc77853, type: 3}
       propertyPath: dialogue.sentences.Array.size
-      value: 0
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 3100948306714011265, guid: 358635f5e3494f748af6bd02dfc77853, type: 3}
       propertyPath: dialogue.sentences.Array.data[0]
-      value: Aw man... I wish I could go to the purple neighborhood.
+      value: HEY!
       objectReference: {fileID: 0}
     - target: {fileID: 3100948306714011265, guid: 358635f5e3494f748af6bd02dfc77853, type: 3}
       propertyPath: dialogue.sentences.Array.data[1]
-      value: I will only let you in if you're purple.
+      value: You need to go back home... Your parents are looking for you!
       objectReference: {fileID: 0}
     - target: {fileID: 6799141493579684121, guid: 358635f5e3494f748af6bd02dfc77853, type: 3}
       propertyPath: m_Name
@@ -4469,15 +4470,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3100948306714011265, guid: 358635f5e3494f748af6bd02dfc77853, type: 3}
       propertyPath: dialogue.name
-      value: 
+      value: Player
       objectReference: {fileID: 0}
     - target: {fileID: 3100948306714011265, guid: 358635f5e3494f748af6bd02dfc77853, type: 3}
       propertyPath: dialogue.sentences.Array.size
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3100948306714011265, guid: 358635f5e3494f748af6bd02dfc77853, type: 3}
       propertyPath: dialogue.sentences.Array.data[0]
-      value: Aw man... I wish I could go to the purple neighborhood.
+      value: That's the Yellow Neighborhood, I don't want to go there anymore.
       objectReference: {fileID: 0}
     - target: {fileID: 3100948306714011265, guid: 358635f5e3494f748af6bd02dfc77853, type: 3}
       propertyPath: dialogue.sentences.Array.data[1]
@@ -4679,19 +4680,23 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3100948306714011265, guid: 358635f5e3494f748af6bd02dfc77853, type: 3}
       propertyPath: dialogue.name
-      value: 
+      value: Turquise Gang
       objectReference: {fileID: 0}
     - target: {fileID: 3100948306714011265, guid: 358635f5e3494f748af6bd02dfc77853, type: 3}
       propertyPath: dialogue.sentences.Array.size
-      value: 0
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 3100948306714011265, guid: 358635f5e3494f748af6bd02dfc77853, type: 3}
       propertyPath: dialogue.sentences.Array.data[0]
-      value: Aw man... I wish I could go to the purple neighborhood.
+      value: Yo I heard the store's having a sale.
       objectReference: {fileID: 0}
     - target: {fileID: 3100948306714011265, guid: 358635f5e3494f748af6bd02dfc77853, type: 3}
       propertyPath: dialogue.sentences.Array.data[1]
-      value: I will only let you in if you're purple.
+      value: A sale on what?
+      objectReference: {fileID: 0}
+    - target: {fileID: 3100948306714011265, guid: 358635f5e3494f748af6bd02dfc77853, type: 3}
+      propertyPath: dialogue.sentences.Array.data[2]
+      value: COLORS!
       objectReference: {fileID: 0}
     - target: {fileID: 6799141493579684121, guid: 358635f5e3494f748af6bd02dfc77853, type: 3}
       propertyPath: m_Name
@@ -7110,7 +7115,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 8
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1410770677
 MonoBehaviour:
@@ -7383,19 +7388,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3100948306714011265, guid: 358635f5e3494f748af6bd02dfc77853, type: 3}
       propertyPath: dialogue.name
-      value: 
+      value: Sign
       objectReference: {fileID: 0}
     - target: {fileID: 3100948306714011265, guid: 358635f5e3494f748af6bd02dfc77853, type: 3}
       propertyPath: dialogue.sentences.Array.size
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3100948306714011265, guid: 358635f5e3494f748af6bd02dfc77853, type: 3}
       propertyPath: dialogue.sentences.Array.data[0]
-      value: Aw man... I wish I could go to the purple neighborhood.
+      value: The Park <<< >>> The Shop
       objectReference: {fileID: 0}
     - target: {fileID: 3100948306714011265, guid: 358635f5e3494f748af6bd02dfc77853, type: 3}
       propertyPath: dialogue.sentences.Array.data[1]
-      value: I will only let you in if you're purple.
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 6799141493579684121, guid: 358635f5e3494f748af6bd02dfc77853, type: 3}
       propertyPath: m_Name
@@ -7773,19 +7778,31 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3100948306714011265, guid: 358635f5e3494f748af6bd02dfc77853, type: 3}
       propertyPath: dialogue.name
-      value: 
+      value: Shop
       objectReference: {fileID: 0}
     - target: {fileID: 3100948306714011265, guid: 358635f5e3494f748af6bd02dfc77853, type: 3}
       propertyPath: dialogue.sentences.Array.size
-      value: 0
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 3100948306714011265, guid: 358635f5e3494f748af6bd02dfc77853, type: 3}
       propertyPath: dialogue.sentences.Array.data[0]
-      value: Aw man... I wish I could go to the purple neighborhood.
+      value: Welcome to my shop... The only shop around :)
       objectReference: {fileID: 0}
     - target: {fileID: 3100948306714011265, guid: 358635f5e3494f748af6bd02dfc77853, type: 3}
       propertyPath: dialogue.sentences.Array.data[1]
-      value: I will only let you in if you're purple.
+      value: Today we have a sale on colors.
+      objectReference: {fileID: 0}
+    - target: {fileID: 3100948306714011265, guid: 358635f5e3494f748af6bd02dfc77853, type: 3}
+      propertyPath: dialogue.sentences.Array.data[2]
+      value: Only have red and blue left tho...
+      objectReference: {fileID: 0}
+    - target: {fileID: 3100948306714011265, guid: 358635f5e3494f748af6bd02dfc77853, type: 3}
+      propertyPath: dialogue.sentences.Array.data[3]
+      value: 5$ each.
+      objectReference: {fileID: 0}
+    - target: {fileID: 3100948306714011265, guid: 358635f5e3494f748af6bd02dfc77853, type: 3}
+      propertyPath: dialogue.sentences.Array.data[4]
+      value: 5$ each.
       objectReference: {fileID: 0}
     - target: {fileID: 6799141493579684121, guid: 358635f5e3494f748af6bd02dfc77853, type: 3}
       propertyPath: m_Name
@@ -8148,19 +8165,27 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3100948306714011265, guid: 358635f5e3494f748af6bd02dfc77853, type: 3}
       propertyPath: dialogue.name
-      value: 
+      value: Friends
       objectReference: {fileID: 0}
     - target: {fileID: 3100948306714011265, guid: 358635f5e3494f748af6bd02dfc77853, type: 3}
       propertyPath: dialogue.sentences.Array.size
-      value: 0
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 3100948306714011265, guid: 358635f5e3494f748af6bd02dfc77853, type: 3}
       propertyPath: dialogue.sentences.Array.data[0]
-      value: Aw man... I wish I could go to the purple neighborhood.
+      value: Hi dude... Are you still trying to get into the purple neighborhood?
       objectReference: {fileID: 0}
     - target: {fileID: 3100948306714011265, guid: 358635f5e3494f748af6bd02dfc77853, type: 3}
       propertyPath: dialogue.sentences.Array.data[1]
-      value: I will only let you in if you're purple.
+      value: You're obsessed with that place man...
+      objectReference: {fileID: 0}
+    - target: {fileID: 3100948306714011265, guid: 358635f5e3494f748af6bd02dfc77853, type: 3}
+      propertyPath: dialogue.sentences.Array.data[2]
+      value: We worry about you.
+      objectReference: {fileID: 0}
+    - target: {fileID: 3100948306714011265, guid: 358635f5e3494f748af6bd02dfc77853, type: 3}
+      propertyPath: dialogue.sentences.Array.data[3]
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 6799141493579684121, guid: 358635f5e3494f748af6bd02dfc77853, type: 3}
       propertyPath: m_Name
@@ -9437,19 +9462,23 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3100948306714011265, guid: 358635f5e3494f748af6bd02dfc77853, type: 3}
       propertyPath: dialogue.name
-      value: 
+      value: Concerned Parents
       objectReference: {fileID: 0}
     - target: {fileID: 3100948306714011265, guid: 358635f5e3494f748af6bd02dfc77853, type: 3}
       propertyPath: dialogue.sentences.Array.size
-      value: 0
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 3100948306714011265, guid: 358635f5e3494f748af6bd02dfc77853, type: 3}
       propertyPath: dialogue.sentences.Array.data[0]
-      value: Aw man... I wish I could go to the purple neighborhood.
+      value: Where are our children??
       objectReference: {fileID: 0}
     - target: {fileID: 3100948306714011265, guid: 358635f5e3494f748af6bd02dfc77853, type: 3}
       propertyPath: dialogue.sentences.Array.data[1]
-      value: I will only let you in if you're purple.
+      value: HEY yellow guy... could you help us and find our children?
+      objectReference: {fileID: 0}
+    - target: {fileID: 3100948306714011265, guid: 358635f5e3494f748af6bd02dfc77853, type: 3}
+      propertyPath: dialogue.sentences.Array.data[2]
+      value: One is red and the other is orange, if you help us we'll pay you.
       objectReference: {fileID: 0}
     - target: {fileID: 6799141493579684121, guid: 358635f5e3494f748af6bd02dfc77853, type: 3}
       propertyPath: m_Name
@@ -9785,7 +9814,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1984253050}
   m_Layer: 0
-  m_Name: GameObject
+  m_Name: Events
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -9816,7 +9845,7 @@ Transform:
   - {fileID: 645744918}
   - {fileID: 405438095}
   m_Father: {fileID: 0}
-  m_RootOrder: 10
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1986078865
 PrefabInstance:
@@ -10594,6 +10623,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2123972008}
     m_Modifications:
+    - target: {fileID: 1913951986331629667, guid: 32b6c4cfec089ad43b433bceaca9999c, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 1.25
+      objectReference: {fileID: 0}
+    - target: {fileID: 1913951986331629667, guid: 32b6c4cfec089ad43b433bceaca9999c, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.25
+      objectReference: {fileID: 0}
     - target: {fileID: 3357043468571287387, guid: 32b6c4cfec089ad43b433bceaca9999c, type: 3}
       propertyPath: m_RootOrder
       value: 8
@@ -10642,6 +10679,14 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 2a188cbceb3f73b48a6902a72c972fb6, type: 2}
+    - target: {fileID: 7774868557412631612, guid: 32b6c4cfec089ad43b433bceaca9999c, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 1.25
+      objectReference: {fileID: 0}
+    - target: {fileID: 7774868557412631612, guid: 32b6c4cfec089ad43b433bceaca9999c, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.25
+      objectReference: {fileID: 0}
     - target: {fileID: 7822671527121539669, guid: 32b6c4cfec089ad43b433bceaca9999c, type: 3}
       propertyPath: m_Name
       value: Store
