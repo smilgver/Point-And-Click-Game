@@ -6,7 +6,7 @@ using DG.Tweening;
 public class ScreenShift : MonoBehaviour
 {
     [SerializeField] Camera camera;
-    bool cameraTransitioned = true;
+    [SerializeField] bool cameraTransitioned = true;
     public Vector3 cameraPos1 = new Vector3(-24, 40, -25);
     public Vector3 cameraPos2 = new Vector3(-24, 40, -71);
     
@@ -21,10 +21,12 @@ public class ScreenShift : MonoBehaviour
         {
             if(cameraTransitioned)
             {
+                cameraTransitioned = false;
                 camera.transform.DOMove(cameraPos2, 1);
             }
             else if(!cameraTransitioned)
             {
+                cameraTransitioned = true;
                 camera.transform.DOMove(cameraPos1, 1);
             }
         }

@@ -1771,6 +1771,10 @@ PrefabInstance:
       propertyPath: dialogue.sentences.Array.data[7]
       value: Thanks... I feel a little better now.
       objectReference: {fileID: 0}
+    - target: {fileID: 3100948306714011265, guid: 358635f5e3494f748af6bd02dfc77853, type: 3}
+      propertyPath: dialogue.sentences.Array.data[8]
+      value: Thanks... I feel a little better now.
+      objectReference: {fileID: 0}
     - target: {fileID: 6799141493579684121, guid: 358635f5e3494f748af6bd02dfc77853, type: 3}
       propertyPath: m_Name
       value: NPC (5)
@@ -4474,15 +4478,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3100948306714011265, guid: 358635f5e3494f748af6bd02dfc77853, type: 3}
       propertyPath: dialogue.sentences.Array.size
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 3100948306714011265, guid: 358635f5e3494f748af6bd02dfc77853, type: 3}
       propertyPath: dialogue.sentences.Array.data[0]
-      value: That's the Yellow Neighborhood, I don't want to go there anymore.
+      value: That's the Yellow Neighborhood.
       objectReference: {fileID: 0}
     - target: {fileID: 3100948306714011265, guid: 358635f5e3494f748af6bd02dfc77853, type: 3}
       propertyPath: dialogue.sentences.Array.data[1]
-      value: I will only let you in if you're purple.
+      value: I don't want to go there anymore.
       objectReference: {fileID: 0}
     - target: {fileID: 6799141493579684121, guid: 358635f5e3494f748af6bd02dfc77853, type: 3}
       propertyPath: m_Name
@@ -9462,11 +9466,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3100948306714011265, guid: 358635f5e3494f748af6bd02dfc77853, type: 3}
       propertyPath: dialogue.name
-      value: Concerned Parents
+      value: Couple
       objectReference: {fileID: 0}
     - target: {fileID: 3100948306714011265, guid: 358635f5e3494f748af6bd02dfc77853, type: 3}
       propertyPath: dialogue.sentences.Array.size
-      value: 3
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 3100948306714011265, guid: 358635f5e3494f748af6bd02dfc77853, type: 3}
       propertyPath: dialogue.sentences.Array.data[0]
@@ -9474,11 +9478,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3100948306714011265, guid: 358635f5e3494f748af6bd02dfc77853, type: 3}
       propertyPath: dialogue.sentences.Array.data[1]
-      value: HEY yellow guy... could you help us and find our children?
+      value: 'HEY yellow guy... '
       objectReference: {fileID: 0}
     - target: {fileID: 3100948306714011265, guid: 358635f5e3494f748af6bd02dfc77853, type: 3}
       propertyPath: dialogue.sentences.Array.data[2]
-      value: One is red and the other is orange, if you help us we'll pay you.
+      value: could you help us find our children?
+      objectReference: {fileID: 0}
+    - target: {fileID: 3100948306714011265, guid: 358635f5e3494f748af6bd02dfc77853, type: 3}
+      propertyPath: dialogue.sentences.Array.data[3]
+      value: One is red and the other is orange.
+      objectReference: {fileID: 0}
+    - target: {fileID: 3100948306714011265, guid: 358635f5e3494f748af6bd02dfc77853, type: 3}
+      propertyPath: dialogue.sentences.Array.data[4]
+      value: if you help us we'll pay you.
       objectReference: {fileID: 0}
     - target: {fileID: 6799141493579684121, guid: 358635f5e3494f748af6bd02dfc77853, type: 3}
       propertyPath: m_Name
