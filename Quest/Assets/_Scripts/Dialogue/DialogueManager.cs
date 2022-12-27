@@ -7,6 +7,7 @@ using UnityEngine.UI;
 public class DialogueManager : MonoBehaviour
 {
     private Queue<string> sentences;
+    private Queue<string> questSentences;
 
     [SerializeField] GameObject canvasParent;
     [SerializeField] Canvas canvas;
@@ -16,6 +17,7 @@ public class DialogueManager : MonoBehaviour
     [SerializeField] Button endConvButton;
     [SerializeField] Button questButton;
     [SerializeField] bool playerInConversation = false;
+    public bool playerInQuest = false;
 
     void Start()
     {
@@ -36,36 +38,33 @@ public class DialogueManager : MonoBehaviour
 
 
     }
-   
+
     public void StartDialogue(Dialogue dialogue)
     {
         canvas.gameObject.SetActive(true);
         playerInConversation = true;
         NPC_Name.text = dialogue.name;
-        
         sentences.Clear();
-        
-        foreach(string sentence in dialogue.sentences)
+        foreach (string sentence in dialogue.sentences)
         {
             sentences.Enqueue(sentence);
         }
-
         DisplayNextSentence();
-
     }
-    
-    public void DisplayNextSentence() 
+
+
+    public void DisplayNextSentence()
     {
-        if(sentences.Count == 0)
+        if (sentences.Count == 0)
         {
             EndDialogue();
             return;
         }
         string sentence = sentences.Dequeue();
-        StopCoroutine(AnimateText(sentence));
+        StopAllCoroutines();
         StartCoroutine(AnimateText(sentence));
-    }    
-    
+    }
+
     IEnumerator AnimateText(string sentence) //Animates the text on the screen slowly.
     {
         NPC_Dialogue.text = "";
@@ -75,14 +74,14 @@ public class DialogueManager : MonoBehaviour
             yield return new WaitForSeconds(.03f);
         }
     }
-    
+
     public void EndDialogue()
     {
         canvas.gameObject.SetActive(false);
         playerInConversation = false;
     }
 
-    public bool PlayerInConversation 
+    public bool PlayerInConversation
     {
         get { return playerInConversation; }
     }

@@ -1229,6 +1229,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3100948306714011265, guid: 358635f5e3494f748af6bd02dfc77853, type: 3}
+      propertyPath: npcHasQuest
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3100948306714011265, guid: 358635f5e3494f748af6bd02dfc77853, type: 3}
       propertyPath: dialogue.name
       value: Jeb
       objectReference: {fileID: 0}
@@ -1749,7 +1753,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3100948306714011265, guid: 358635f5e3494f748af6bd02dfc77853, type: 3}
       propertyPath: dialogue.sentences.Array.data[2]
-      value: Well... my friend move far away and I miss her...
+      value: Well... my friend moved far away and I miss her...
       objectReference: {fileID: 0}
     - target: {fileID: 3100948306714011265, guid: 358635f5e3494f748af6bd02dfc77853, type: 3}
       propertyPath: dialogue.sentences.Array.data[3]
@@ -7141,6 +7145,7 @@ MonoBehaviour:
   endConvButton: {fileID: 0}
   questButton: {fileID: 0}
   playerInConversation: 0
+  playerInQuest: 0
 --- !u!1001 &1450197294
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -9465,7 +9470,19 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3100948306714011265, guid: 358635f5e3494f748af6bd02dfc77853, type: 3}
+      propertyPath: npcHasQuest
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3100948306714011265, guid: 358635f5e3494f748af6bd02dfc77853, type: 3}
       propertyPath: dialogue.name
+      value: Couple
+      objectReference: {fileID: 0}
+    - target: {fileID: 3100948306714011265, guid: 358635f5e3494f748af6bd02dfc77853, type: 3}
+      propertyPath: finalDialogue.name
+      value: Couple
+      objectReference: {fileID: 0}
+    - target: {fileID: 3100948306714011265, guid: 358635f5e3494f748af6bd02dfc77853, type: 3}
+      propertyPath: questDialogue.name
       value: Couple
       objectReference: {fileID: 0}
     - target: {fileID: 3100948306714011265, guid: 358635f5e3494f748af6bd02dfc77853, type: 3}
@@ -9491,6 +9508,30 @@ PrefabInstance:
     - target: {fileID: 3100948306714011265, guid: 358635f5e3494f748af6bd02dfc77853, type: 3}
       propertyPath: dialogue.sentences.Array.data[4]
       value: if you help us we'll pay you.
+      objectReference: {fileID: 0}
+    - target: {fileID: 3100948306714011265, guid: 358635f5e3494f748af6bd02dfc77853, type: 3}
+      propertyPath: finalDialogue.sentences.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3100948306714011265, guid: 358635f5e3494f748af6bd02dfc77853, type: 3}
+      propertyPath: questDialogue.sentences.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 3100948306714011265, guid: 358635f5e3494f748af6bd02dfc77853, type: 3}
+      propertyPath: finalDialogue.sentences.Array.data[0]
+      value: Quest Complete.
+      objectReference: {fileID: 0}
+    - target: {fileID: 3100948306714011265, guid: 358635f5e3494f748af6bd02dfc77853, type: 3}
+      propertyPath: questDialogue.sentences.Array.data[0]
+      value: Thank you for finding our children!
+      objectReference: {fileID: 0}
+    - target: {fileID: 3100948306714011265, guid: 358635f5e3494f748af6bd02dfc77853, type: 3}
+      propertyPath: questDialogue.sentences.Array.data[1]
+      value: Here's 5$ for your trouble.
+      objectReference: {fileID: 0}
+    - target: {fileID: 3100948306714011265, guid: 358635f5e3494f748af6bd02dfc77853, type: 3}
+      propertyPath: questDialogue.sentences.Array.data[2]
+      value: Have a good day.
       objectReference: {fileID: 0}
     - target: {fileID: 6799141493579684121, guid: 358635f5e3494f748af6bd02dfc77853, type: 3}
       propertyPath: m_Name
@@ -10714,6 +10755,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1084065074, guid: 2b6e242307f02cd4db4a6231ee31981b, type: 3}
+      propertyPath: m_Constraints
+      value: 112
+      objectReference: {fileID: 0}
     - target: {fileID: 5233701638451201844, guid: 2b6e242307f02cd4db4a6231ee31981b, type: 3}
       propertyPath: m_Name
       value: Player

@@ -11,16 +11,16 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] Camera camera;
     [SerializeField] Canvas canvas;
     [SerializeField] DialogueManager dialogueManager;
-    
+
     Vector3 mousePosition;
     Vector3 cameraPosition1 = new Vector3(-24, 40, -25);
     Vector3 cameraPosition2 = new Vector3(-24, 40, -71);
     Vector3 cameraPosition3 = new Vector3(-24, 40, -115);
     Vector3 cameraPosition4a = new Vector3(18.5f, 40, -115);
     Vector3 cameraPosition4b = new Vector3(-68.75f, 40, -115);
-    
+
     string input;
-    
+
 
 
     private void Awake()
@@ -35,12 +35,12 @@ public class PlayerMovement : MonoBehaviour
         mousePosition = transform.position;
 
     }
-    
+
     void Update()
     {
         navMeshAgent.destination = mousePosition;
 
-        if(Input.GetMouseButtonDown(0) && !UnityEngine.EventSystems.EventSystem.current.IsPointerOverGameObject() && !dialogueManager.PlayerInConversation/*!canvas.isActiveAndEnabled*/)
+        if (Input.GetMouseButtonDown(0) && !UnityEngine.EventSystems.EventSystem.current.IsPointerOverGameObject() && !dialogueManager.PlayerInConversation/*!canvas.isActiveAndEnabled*/)
         {
             MovePlayer();
         }
@@ -54,12 +54,11 @@ public class PlayerMovement : MonoBehaviour
         if (Physics.Raycast(ray, out hit))
         {
             mousePosition = hit.point;
-            Debug.Log(mousePosition);
         }
     }
     void MoveCamera(string input)
     {
-        
+
         switch (input)
         {
             case "1":

@@ -9,7 +9,7 @@ public class ScreenShift : MonoBehaviour
     [SerializeField] bool cameraTransitioned = true;
     public Vector3 cameraPos1 = new Vector3(-24, 40, -25);
     public Vector3 cameraPos2 = new Vector3(-24, 40, -71);
-    
+
     void Start()
     {
         camera = Camera.main;
@@ -17,14 +17,14 @@ public class ScreenShift : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if(other.gameObject.tag == "Player")
+        if (other.gameObject.tag == "Player")
         {
-            if(cameraTransitioned)
+            if (cameraTransitioned)
             {
                 cameraTransitioned = false;
                 camera.transform.DOMove(cameraPos2, 1);
             }
-            else if(!cameraTransitioned)
+            else if (!cameraTransitioned)
             {
                 cameraTransitioned = true;
                 camera.transform.DOMove(cameraPos1, 1);
